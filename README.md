@@ -3,6 +3,7 @@
 A dual-agent curriculum generator that creates a personalized roadmap and curates verified resources tailored to users' specific goals.
 
 📖 Introduction
+
 This project contains the core logic for SkillScout.ai, a dual-agent system designed to assist users in generating personalized, resource-rich learning curriculums. The system is built using Google Gemini 1.5 Flash and the Google Search Grounding tool, following a modular orchestration architecture that separates structural planning from content curation.
 
 i. Problem Statement & Motivation
@@ -24,6 +25,7 @@ By managing the interaction between these two agents via a central controller, t
 
 iii. Architecture
 
+![](images/archidiag.png)
 The application is built on a Client-Side Agentic Architecture designed around these core concepts:
 
 - Sequential Agent Architecture: The system utilizes a linear dependency flow. The Planner Agent must first successfully generate the "Syllabus Skeleton" (JSON structure) before the Curator Agent is activated. The Controller (App.tsx) manages this hand-off, taking the output of the Planner and feeding it iteratively into the Curator, ensuring that research is only conducted on approved, structured topics.
