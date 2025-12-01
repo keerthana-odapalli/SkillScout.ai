@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillScout.ai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+      /* Custom scrollbar for cleaner look */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 3px; }
+      ::-webkit-scrollbar-thumb:hover { background-color: #94a3b8; }
+
+      /* Monet Inspired Background - Water Lilies Palette */
+      .monet-bg {
+        background-color: #f0fdfa; /* Very light teal base */
+        background-image: 
+          radial-gradient(at 0% 0%, hsla(185, 70%, 85%, 0.7) 0px, transparent 50%),
+          radial-gradient(at 100% 0%, hsla(260, 60%, 88%, 0.7) 0px, transparent 50%),
+          radial-gradient(at 100% 100%, hsla(140, 60%, 85%, 0.7) 0px, transparent 50%),
+          radial-gradient(at 0% 100%, hsla(210, 70%, 85%, 0.7) 0px, transparent 50%),
+          radial-gradient(at 50% 50%, hsla(190, 50%, 95%, 0.5) 0px, transparent 50%);
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="monet-bg text-slate-900 antialiased selection:bg-cyan-100 selection:text-cyan-600">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "SkillScout.ai",
+  "description": "A multi-agent system that generates personalized learning curricula. A Planner Agent structures the syllabus, and a Curator Agent uses Google Search to find real-time, high-quality resources for each topic.",
+  "requestFramePermissions": []
+}
